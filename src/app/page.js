@@ -566,7 +566,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-white border-white hover:bg-white/10"
+                className="text-black border-white hover:bg-white/10"
               >
                 {t.hero.learnMore}
               </Button>
