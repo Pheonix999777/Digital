@@ -12,8 +12,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import ContactImg from "../../public/img/Contact Image.png";
 
-// Language translations
 const translations = {
   en: {
     nav: {
@@ -554,12 +554,15 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <Button
-                size="lg"
-                className="bg-white text-purple-600 hover:bg-white/90"
-              >
-                {t.hero.cta}
-              </Button>
+              <Link href={"#features"}>
+                <Button
+                  size="lg"
+                  className="bg-white text-purple-600 hover:bg-white/90"
+                >
+                  {t.hero.cta}
+                </Button>
+              </Link>
+
               <Button
                 size="lg"
                 variant="outline"
@@ -965,7 +968,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex items-center justify-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src={ContactImg}
                     alt="Contact"
                     width={300}
                     height={300}
